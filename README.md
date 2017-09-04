@@ -61,7 +61,7 @@ Favorites.fields = ['User','City','Country']
 ### To get, create, delete, update forecasts make the following api calls:
 ```php
 Forecasts.fillable.fields = ['City','Country','Date','Time','weather','temp_min',temp_max']
-Forecasts.fillable.fields = ['City','Country','Date','Time','weather','temp_min',temp_max']`
+Forecasts.fillable.fields = ['City','Country','Date','Time','weather','temp_min',temp_max']
 ```
 - Get all forecasts  
 `GET: '/api/forecasts'`
