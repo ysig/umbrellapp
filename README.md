@@ -32,13 +32,13 @@ User.fields = ['User Id', 'Name', 'e-mail']
 Cities.fillable.fields = ['City','Country']
 Cities.fields = ['City','Country']
 ```
-- Check if a city exists (response: 200)
+- Check if a city exists (response: 200)  
 `GET: '/api/cities/exists/city/{city}/country/{country}'`
 
 - Create a new city (city,country)  
 `POST: '/api/cities'`
 
-- Delete a city
+- Delete a city  
 `DELETE: '/api/cities/city/{city}/country/{country}'`
 
 ### To get, create, delete, update favorites make the following api calls:
@@ -55,7 +55,7 @@ Favorites.fields = ['User','City','Country']
 - Delete all favorites of a user (by id)  
 `DELETE: '/api/favorites/{id}'`
 
-- Delete a certain user favorite (id,city,country)
+- Delete a certain user favorite (id,city,country)  
 `DELETE: '/api/favorites/{id}/city/{city}/country/{country}'`
 
 ### To get, create, delete, update forecasts make the following api calls:
@@ -69,16 +69,16 @@ Forecasts.fillable.fields = ['City','Country','Date','Time','weather','temp_min'
 - Get all forecasts for a city  
 `GET: '/api/forecasts/city/{city}/country/{country}'`
 
-- Get all forecast for a certain date
+- Get all forecast for a certain date  
 `GET: '/api/forecasts/city/{city}/country/{country}/date/{date}'`
 
 - Create new forecast (city,country,date,time,weather\_type, min\_temperature, max\_temperature)  
 `POST: '/api/forecasts'`
 
-- Update a forecast for a city, country, date, time
+- Update a forecast for a city, country, date, time  
 `PUT: '/api/forecasts/city/{city}/country/{country}/date/{date}/time/{time}'`
 
-- Delete a forecast for a city, country, date, time
+- Delete a forecast for a city, country, date, time  
 `DELETE: 'forecasts/city/{city}/country/{country}/date/{date}/time/{time}'`
 
 ## Entity relation Diagram:
